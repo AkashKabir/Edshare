@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.education.edushare.edushare">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:icon="@drawable/finallogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/finallogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ProjectViewActivity" />
+        <activity android:name=".NewProjectActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".HomeActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/AppTheme.TransNav"/>
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".ForumDetailsActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".Utils.EncryptionActivity" />
+        <activity android:name=".TestingEncryption" />
+        <activity android:name=".GroupMessageActivity" />
+
+        <service android:name=".Notifications" />
+    </application>
+
+</manifest>

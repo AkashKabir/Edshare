@@ -1,0 +1,29 @@
+<tabs>
+    <tab
+        id="@+id/tab_dashboard"
+        icon="@drawable/ic_home_24"
+        barColorWhenSelected="#000000"
+        title="Dashboard" />
+    <tab
+        id="@+id/tab_chatroom"
+        barColorWhenSelected="#000000"
+        icon="@drawable/ic_chat_24"
+        title="Friends" />
+
+    <tab
+        id="@+id/tab_star"
+        barColorWhenSelected="#000000"
+        icon="@drawable/ic_star_24"
+        title="Starred" />
+    <tab
+        id="@+id/tab_community"
+        barColorWhenSelected="#000000"
+        icon="@drawable/ic_forum"
+        title="Requests" />
+    <tab
+        id="@+id/tab_profile"
+        barColorWhenSelected="#000000"
+        icon="@drawable/ic_face_24"
+        title="Profile" />
+
+</tabs>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/cdinfo"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="4dp">
+
+
+        <TextView
+            android:id="@+id/info_tv"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/tag_bckg"
+            android:padding="20dp"
+            android:gravity="center"
+            android:text="Edshare is a idea sharing platform for team building and collaboration within an organization. Edshare provides individuals and opportunity to share ideas and get requests from the interested persons without any need of searching for team partners. Edshare provides chat functionalities with end to end encryption for getting in touch with each other. \n\nThis is the Dashboard section where all the ideas shared will be available for you to look and collaborate. You can also publish your idea by clicking on '+' button. \n\n Hope you like it! Goodluck Hunting :-)" />
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/placeholder_txt"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/searchbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:background="@color/colorPrimaryDark"
+            android:minHeight="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/search_Tv"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/colorPrimaryDark"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:hint="Search Something"
+                android:paddingLeft="10dp"
+                android:text="Shared Ideas"
+                android:textColor="#fff"
+                android:textColorHint="#ccc"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/info_img"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="-70dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/info"
+                android:visibility="visible" />
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/search_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#34b7b7b7"
+                android:fontFamily="monospace"
+                android:hint="Search Something"
+                android:paddingLeft="10dp"
+                android:textColor="#fff"
+                android:textColorHint="#ccc"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <ImageView
+
+                android:id="@+id/img_search"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_search" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_nothing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="No projects yet"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ll_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/placeholder_txt">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_dash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:stackFromEnd="true">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <com.github.silvestrpredko.dotprogressbar.DotProgressBar
+                android:id="@+id/pb_con"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="70dp"
+                android:visibility="visible"
+                app:startColor="#000" />
+
+            <ImageView
+                android:id="@+id/fab"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/ic_oval_shape"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:padding="5dp"
+                android:src="@drawable/add_white_24x24" />
+
+        </android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

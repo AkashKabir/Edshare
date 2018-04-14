@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="#fff"
+    android:paddingTop="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_user"
+        android:layout_width="65dp"
+        android:padding="5dp"
+        android:layout_height="65dp"
+        android:src="@drawable/default2"
+        android:background="#00ffffff"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:id="@+id/img_notification"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_width="20dp"
+        android:src="@drawable/notification_red"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:layout_marginTop="3dp"
+        android:id="@+id/contact_name"
+        android:fontFamily="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/img_notification"
+        android:layout_marginLeft="20dp"
+        android:layout_alignTop="@+id/img_user"
+        android:layout_toRightOf="@+id/img_user"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="19sp"
+        tools:text="Akash Kabir" />
+
+    <TextView
+        android:layout_toLeftOf="@+id/img_notification"
+        android:id="@+id/list_desc"
+        android:fontFamily="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact_name"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/img_user"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#807f7f"
+        android:textSize="14sp"
+        tools:text="Preview" />
+
+    <TextView
+        android:id="@+id/margin"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@+id/img_user"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/img_user"
+        android:background="#dedede"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#ccc" />
+</RelativeLayout>

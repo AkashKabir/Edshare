@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "758889537755",
+    "firebase_url": "https://edshare-a9c56.firebaseio.com",
+    "project_id": "edshare-a9c56",
+    "storage_bucket": "edshare-a9c56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:758889537755:android:d8be19fc85c26693",
+        "android_client_info": {
+          "package_name": "com.education.edushare.edushare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "758889537755-rk2r8q5s7k85k46gh53klqpp80ju3qe5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCu0qTAbsA01BwPOKykpPwiohgvjeSXq7M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

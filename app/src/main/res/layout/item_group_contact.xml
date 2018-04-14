@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="#fff"
+    android:layout_marginBottom="1dp"
+    android:paddingTop="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_user"
+        android:layout_width="65dp"
+        android:padding="12dp"
+        android:layout_height="65dp"
+        android:src="@drawable/projectimg"
+        android:background="@drawable/ic_oval_shape"
+        android:backgroundTint="#cc0000"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:layout_marginTop="3dp"
+        android:id="@+id/contact_name"
+        android:fontFamily="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/img_notification"
+        android:layout_marginLeft="20dp"
+        android:maxLines="4"
+        android:layout_alignTop="@+id/img_user"
+        android:layout_toRightOf="@+id/img_user"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="12sp"
+        tools:text="Akash Kabir" />
+
+    <TextView
+        android:layout_toLeftOf="@+id/img_notification"
+        android:id="@+id/list_desc"
+        android:fontFamily="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact_name"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/img_user"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#807f7f"
+        android:textSize="14sp"
+        tools:text="Preview" />
+
+
+</RelativeLayout>
